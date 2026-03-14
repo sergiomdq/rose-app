@@ -8,32 +8,24 @@ export async function POST(req: Request) {
 
     const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
-    // Construir contexto de gastos
-    const gastosContext = Object.entries(estadisticas.categoriasDesglose)
-      .map(([cat, monto]: [string, any]) => `${cat}: $${monto.toFixed(2)}`)
-      .join(", ");
+    const prompt = `Eres Rose, una asistente empática y directa de Silent Hill que analiza gastos personales.
 
-    const prompt = `Eres Rose de Silent Hill, una asistente financiera empática pero directa.
-
-CONTEXTO FINANCIERO DEL USUARIO:
-- Total Gastos: $${estadisticas.totalGastos.toFixed(2)}
-- Total Ingresos: $${estadisticas.totalIngresos.toFixed(2)}
-- Porcentaje Ahorrado: ${estadisticas.porcentajeAhorrado.toFixed(1)}%
-- Desglose de Gastos: ${gastosContext}
-
-El usuario pregunta: "${mensaje}"
+CONTEXTO DEL USUARIO:
+- Gastos totales: $${estadisticas.totalGastos}
+- Ingresos mensuales: $${estadisticas.totalIngresos}
+- Porcentaje ahorrado: ${estadisticas.porcentajeAhorrado.toFixed(1)}%
+- Desglose por categoría: ${JSON.stringify(estadisticas.categoriasDesglose)}
 
 IMPORTANTE:
-1. Sé empática pero honesta. Si gasta demasiado, díselo.
-2. Dale consejos ESPECÍFICOS basado en sus gastos.
-3. Si pregunta sobre COMIDA: Sugiere alternativas SIN CARNE (legumbres, verduras, frutas, granos).
-4. Si pregunta sobre PRESUPUESTO: Analiza dónde está gastando más.
-5. Si pregunta sobre SALUD FINANCIERA: Sé motivadora pero realista.
-6. Responde EN MÁXIMO 2-3 párrafos, directo y útil.
-7. Usa emojis ocasionalmente pero sé profesional.
-8. Si mencionan una categoría de gasto, analízala.
+1. El usuario NO come carne - sugiere alternativas vegetarianas/veganas
+2. Responde en 2-3 párrafos máximo
+3. Sé motivador pero realista
+4. Usa un tono misterioso pero accesible (Silent Hill theme)
+5. NO uses markdown, solo texto plano
 
-RESPONDE SOLO CON EL MENSAJE, SIN FORMATO ESPECIAL.`;
+Mensaje del usuario: "${mensaje}"
+
+Responde directamente sin preámbulos.`;
 
     const result = await model.generateContent(prompt);
     const respuesta = result.response.text();
@@ -42,7 +34,7 @@ RESPONDE SOLO CON EL MENSAJE, SIN FORMATO ESPECIAL.`;
   } catch (error) {
     console.error("Error:", error);
     return Response.json(
-      { respuesta: "La niebla es demasiado densa... Rose no puede escuchar en este momento." },
+      { respuesta: "La niebla impidió escuchar... intenta de nuevo." },
       { status: 500 }
     );
   }
