@@ -1,0 +1,271 @@
+⚡ GUÍA RÁPIDA: ACTUALIZAR TU APP EN 5 MINUTOS
+═════════════════════════════════════════════════
+
+✅ REQUISITOS:
+- Tu proyecto ya está en Vercel
+- VSCode abierto
+- Git instalado
+- Terminal lista
+
+🚀 PASO 1: REEMPLAZA app/page.tsx (1 minuto)
+──────────────────────────────────────────────
+
+1. Abre VSCode
+2. Navega a: app/page.tsx
+3. Selecciona TODO (Ctrl + A)
+4. Borra (Delete)
+5. Copia TODO el contenido de "page_mejorada.tsx"
+6. Pega en tu app/page.tsx
+7. Guarda (Ctrl + S)
+
+✅ LISTO: Tu interfaz ahora es hermosa
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 PASO 2: REEMPLAZA app/api/analizar-ticket/route.ts (1 minuto)
+────────────────────────────────────────────────────────────────
+
+1. Navega a: app/api/analizar-ticket/route.ts
+2. Selecciona TODO (Ctrl + A)
+3. Borra (Delete)
+4. Copia TODO el contenido de "route_ticket_mejorado.ts"
+5. Pega en tu archivo
+6. Guarda (Ctrl + S)
+
+✅ LISTO: El análisis de tickets ahora es inteligente
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 PASO 3: CREA NUEVA CARPETA Y ARCHIVO (1 minuto)
+───────────────────────────────────────────────────
+
+1. Haz clic derecho en la carpeta "api"
+2. Selecciona "New Folder"
+3. Escribe: chat
+4. Presiona Enter
+5. Haz clic derecho en "chat"
+6. Selecciona "New File"
+7. Escribe: route.ts
+8. Copia TODO el contenido de "api_chat.ts"
+9. Pega en tu nuevo archivo
+10. Guarda (Ctrl + S)
+
+✅ LISTO: Rose ahora puede chatear contigo
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 PASO 4: SUBE LOS CAMBIOS A GITHUB (1 minuto)
+────────────────────────────────────────────────
+
+Abre la terminal en VSCode (Terminal > New Terminal)
+
+Copia y pega ESTOS comandos UNO POR UNO:
+
+git add .
+git commit -m "🔮 Rediseño completo: cámara principal, dashboard y chat"
+git push origin main
+
+⏳ Espera a que termine. Si sale "Everything up-to-date", ¡perfecto!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏳ PASO 5: ESPERA A QUE VERCEL RECONSTRUYA (2-3 minutos)
+────────────────────────────────────────────────────────
+
+1. Ve a vercel.com
+2. Abre tu proyecto rose-app
+3. Verás un "Building..." en progreso
+4. Espera hasta que veas un ✅ VERDE
+
+Si ves ❌ ROJO: Haz clic para ver el error (normalmente es por una coma o algo fácil de arreglar)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ PASO 6: ¡PRUEBA TU APP! (1 minuto)
+──────────────────────────────────────
+
+Cuando Vercel muestre el ✅:
+
+1. Haz clic en tu URL (ejemplo: rose-app.vercel.app)
+2. Deberías ver:
+   - Una interfaz moderna y oscura
+   - Un botón rojo grande "TOMAR FOTO"
+   - Pestañas: Cámara | Dashboard | Historial | Rose
+
+3. ¡Prueba la cámara!
+   - Toma una foto de un ticket de supermercado
+   - Espera 3-5 segundos
+   - Verás cómo Rose analiza y separa cada producto
+
+═══════════════════════════════════════════════════════════
+
+📋 CHECKLIST DE VERIFICACIÓN
+═════════════════════════════
+
+Después de actualizar, verifica que:
+
+✅ La interfaz sea oscura (no blanca)
+✅ Haya un botón rojo "TOMAR FOTO" en la pantalla
+✅ Haya 4 pestañas: Cámara, Dashboard, Historial, Rose
+✅ Los colores de categorías sean diferentes
+✅ Puedas hacer clic en "Dashboard" y veas gráficos
+✅ Puedas tomar una foto y Rose responda
+
+Si TODO está ✅, ¡tu app está lista!
+
+═══════════════════════════════════════════════════════════
+
+🎯 PRIMER TICKET: PASO A PASO
+═══════════════════════════════
+
+1. ABRE LA APP
+   Haz clic en rose-app.vercel.app
+
+2. VES LA PANTALLA DE CÁMARA
+   Hay un botón rojo "📷 TOMAR FOTO"
+
+3. HACES CLIC
+   Tu móvil abre la cámara
+
+4. TOMAS FOTO DEL TICKET
+   Apunta a un ticket del supermercado
+   Asegúrate que se vea claro
+   Haz click para capturar
+
+5. ROSE ANALIZA (3-5 segundos)
+   Ves un mensaje: "Rose está observando..."
+
+6. ¡DESGLOSE AUTOMÁTICO!
+   Ejemplo:
+   ✓ Pasta Dental → Salud → $2.50
+   ✓ Tomates → Verduras → $3.20
+   ✓ Detergente → Limpieza → $5.99
+   Total: $11.69
+
+7. VES EN DASHBOARD
+   Haz clic en la pestaña "Dashboard"
+   Verás gráficos mostrando:
+   - Cuánto gastaste
+   - En qué categorías
+   - Tu porcentaje de ahorro
+
+8. CHATEAS CON ROSE
+   Pestaña "Rose"
+   Pregunta: "¿Cómo van mis gastos?"
+   Rose te responde con análisis
+
+═══════════════════════════════════════════════════════════
+
+⚙️ SI ALGO FALLA
+═════════════════
+
+❌ "No puedo tomar foto"
+   → Verifica que estés en HTTPS (Vercel lo hace automático)
+   → Permisos de cámara en el navegador
+
+❌ "Rose no analiza el ticket"
+   → La foto debe ser clara y legible
+   → Intenta con más luz
+   → Asegúrate que el texto del ticket sea visible
+
+❌ "Los gastos no se guardan"
+   → Verifica en Vercel > Settings > Environment Variables
+   → Asegúrate que tengas:
+      • NEXT_PUBLIC_SUPABASE_URL
+      • NEXT_PUBLIC_SUPABASE_ANON_KEY
+      • GEMINI_API_KEY
+
+❌ "El build en Vercel falló"
+   → Haz clic en "See more details"
+   → Busca la línea de error (normalmente es una coma)
+   → Vuelve a VSCode, arregla, y hace git push de nuevo
+
+═══════════════════════════════════════════════════════════
+
+💡 TIPS PROFESIONALES
+═════════════════════
+
+1. TOMA FOTOS CLARAS
+   - Luz natural es mejor
+   - Escala el ticket para que llene la pantalla
+   - Evita sombras
+
+2. TICKETS LARGOS
+   - Si es muy largo, toma 2 fotos
+   - Una por la mitad superior
+   - Una por la mitad inferior
+   - Rose las analizará por separado
+
+3. USA EL DASHBOARD
+   - Actualízalo cada semana
+   - Verás patrones de gasto
+   - Detecta categorías donde gastas mucho
+
+4. CHATEA CON ROSE
+   - "¿En qué gasto más?"
+   - "Dame consejos de ahorro"
+   - "¿Cómo va mi presupuesto?"
+   - Rose tiene contexto de TUS gastos
+
+5. EXPORTA DATOS (próximamente)
+   - Pronto podrás descargar tus gastos
+   - Útil para impuestos/análisis
+
+═══════════════════════════════════════════════════════════
+
+🎓 CATEGORÍAS QUE ROSE RECONOCE
+════════════════════════════════
+
+✅ COMIDA SALUDABLE:
+   Verduras, frutas, legumbres, granos integrales, frutos secos
+
+✅ PROTEÍNA ANIMAL:
+   Pollo, carne, pescado, huevos, lácteos
+
+✅ SALUD:
+   Medicinas, vitaminas, pasta dental, champú
+
+✅ LIMPIEZA:
+   Detergentes, desinfectantes, papel higiénico
+
+✅ MASCOTAS:
+   Comida de gatos/perros, juguetes, accesorios
+
+✅ TRANSPORTE:
+   Gasolina, autobús, taxi, metro
+
+✅ OCIO:
+   Cine, libros, videojuegos, restaurantes
+
+✅ OTROS:
+   Lo que no encaje en las anteriores
+
+═══════════════════════════════════════════════════════════
+
+🎉 ¡FELICIDADES!
+════════════════
+
+Ahora tienes:
+✨ Una app moderna y hermosa
+✨ Análisis automático de tickets
+✨ Dashboard con gráficos
+✨ Historial desagregado
+✨ Chat inteligente con Rose
+✨ Categorización automática
+
+¡Tu app Rose está VIVA! 🔮
+
+═══════════════════════════════════════════════════════════
+
+📞 PRÓXIMOS FEATURES (cosas que podemos añadir después):
+
+- 📊 Exportar a Excel
+- 💳 Conectar tarjeta bancaria
+- 🎯 Metas de ahorro personalizadas
+- 📈 Proyecciones de gasto
+- 🔔 Alertas cuando excedes presupuesto
+- 👥 Compartir gastos con familia
+- 🌍 Multi-moneda
+- 📱 App nativa (iOS/Android)
+
+¿Necesitas ayuda con algo? ¡Aquí estoy! 🔮
